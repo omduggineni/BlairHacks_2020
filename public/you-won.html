@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/w3.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+            body{
+                background-image: url("https://pngimage.net/wp-content/uploads/2018/06/stars-background-png-4.png");
+            }
+        </style>
+    </head>
+    <body style="content-align:center !important; text-align:center !important">
+        <h1 style="width:100%; text-align:center !important"><span style="color: #ffffff;" id = "ht"></span></h1>
+       
+       <a href="index.html" class="w3-button w3-btn w3-blue w3-round-xxlarge w3-jumbo w3-border w3-border-blue w3-ripple" align="center" style="font-family:oswald; width:33%">Play Again!</a>
+        <script>
+    function getParameterByName(name) {
+        let url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+            var str = getParameterByName("level");
+            if (str==0) {
+                str = "Easy";
+            }
+            if (str==1) {
+                str = "Medium";
+            }
+            if (str==2) {
+                str = "Hard";
+            }
+            document.getElementById("ht").innerHTML = "Congrats! You beat the " + str + " level";
+        </script>
+    </body>
+</html>
