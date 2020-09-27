@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 rm -rvf BlairHacks_2020;
 git clone https://github.com/OmDuggineni/BlairHacks_2020.git;
