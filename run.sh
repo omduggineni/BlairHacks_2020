@@ -2,6 +2,6 @@
 
 rm -rvf BlairHacks_2020;
 git clone https://github.com/OmDuggineni/BlairHacks_2020.git;
-cp /site/public/BlairHacks_2020/run.sh /site/run.sh;
+cat /site/public/BlairHacks_2020/run.sh > /site/run.sh;
 cd BlairHacks_2020;
 node server.js;
